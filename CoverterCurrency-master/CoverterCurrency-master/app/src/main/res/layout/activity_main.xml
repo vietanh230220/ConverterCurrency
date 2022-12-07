@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Currency Converter"
+        android:textSize="22sp"
+        android:gravity= "center"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum ="2">
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FROM VND"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="12dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TO"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="12dp"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        android:layout_margin="12dp"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum ="3">
+        <Button
+            android:id="@+id/btn_usd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/gray"
+            />
+
+        <Button
+            android:id="@+id/btn_gbp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GBP"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/gray"
+            />
+
+        <Button
+            android:id="@+id/btn_eur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EUR"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/gray"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum ="3">
+        <Button
+            android:id="@+id/btn_aus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AUS $"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/gray"
+            />
+
+        <Button
+            android:id="@+id/btn_can"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAN $"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/gray"
+            />
+
+        <Button
+            android:id="@+id/btn_vnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JPY"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/gray"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="22sp"
+        android:gravity= "center"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>
